@@ -1,16 +1,11 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+import { StickerList } from "./StickerList/StickerList";
+import stickerData from './stickerData.json'
+import { Container } from "./App.styled";
+
+export function App() {
+    return (
+      <Container>
+        <StickerList stickerData={stickerData}/>
+      </Container>
+    )
 };
